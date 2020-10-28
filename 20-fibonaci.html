@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 20;
+    let a = 0;
+    let b = 1;
+    let count = 2;
+    let str = "0, 1, "
+    for (count; count < n; count++) {
+        let temp = a + b;
+        str += temp + ", ";
+        a = b;
+        b = temp;
+    }
+    // document.write(str);
+    for (let i=0;i<str.length;i++) {
+        if (i%5==0) {
+            document.write(i);
+        }
+        break;
+    }
+
+</script>
+
+</body>
+</html>
